@@ -17,9 +17,16 @@
 			}
 		},
 		onLoad() {
+		uni.setStorageSync('name','就是玩儿')
+		setTimeout(()=>{
+			this.getName()
+		},1000)
 		},
 		methods: {
-
+			getName(){
+				let name = uni.getStorageSync('name')
+				console.log('取出name',name);
+			},
 		}
 	}
 </script>
