@@ -2,7 +2,7 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}1</text>
+			<text class="title">{{title}}2</text>
 		</view>
 	</view>
 </template>
