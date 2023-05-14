@@ -2,7 +2,8 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}2</text>
+			<text class="title">{{title}}</text>
+			<text class="title">{{text}}</text>
 		</view>
 	</view>
 </template>
@@ -11,11 +12,11 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				text:'就是玩儿'
 			}
 		},
 		onLoad() {
-
 		},
 		methods: {
 
@@ -43,6 +44,8 @@
 	.text-area {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.title {
